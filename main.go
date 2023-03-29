@@ -7,6 +7,8 @@ import (
 	"go.uber.org/fx"
 )
 
+//version v1.0.0
+
 func main() {
 	fx.New(
 		fx.Provide(ui.NewHTTPServer, ui.NewServeMux, ui.NewEchoHandler),
